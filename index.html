@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wildflower Data and Learning | Research-Based STEM Education</title>
+  <meta name="description" content="Wildflower Data and Learning creates research-based STEM learning experiences grounded in scientific inquiry, data literacy, and environmental stewardship for K-12 learners and the broader community.">
+
+  <!-- Google Fonts: Merriweather (headings) & Source Sans Pro (body) & JetBrains Mono (field-note labels) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Source+Sans+Pro:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Skip link for keyboard / screen reader users -->
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ============================= -->
+  <!-- HEADER / NAVIGATION           -->
+  <!-- ============================= -->
+  <header class="site-header" id="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#home" class="nav__brand">
+        <svg class="nav__mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+          <circle cx="24" cy="24" r="22" fill="none" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M24 34 C24 34 12 27 12 18 C12 13 16 11 19 14 C21 16 24 21 24 21 C24 21 27 16 29 14 C32 11 36 13 36 18 C36 27 24 34 24 34 Z" fill="currentColor" opacity="0.18"/>
+          <path d="M24 34 V14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M24 18 L18 13 M24 22 L31 16 M24 27 L17 23 M24 30 L30 26" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+        </svg>
+        <span class="nav__brand-text">
+          <span class="nav__brand-name">Wildflower</span>
+          <span class="nav__brand-sub">Data &amp; Learning</span>
+        </span>
+      </a>
+
+      <button class="nav__toggle" id="navToggle" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation menu">
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+      </button>
+
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="#home" class="nav__link">Home</a></li>
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#programs" class="nav__link">Programs</a></li>
+        <li><a href="#curriculum" class="nav__link">Curriculum</a></li>
+        <li><a href="#consulting" class="nav__link">Consulting</a></li>
+        <li><a href="#events" class="nav__link">Events</a></li>
+        <li><a href="#advisory-board" class="nav__link">Advisory Board</a></li>
+        <li><a href="#newsletter" class="nav__link nav__link--cta">Newsletter</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ============================= -->
+    <!-- HERO                          -->
+    <!-- ============================= -->
+    <section class="hero" id="home">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="field-tag">Field Journal &mdash; Wildflower Data &amp; Learning</p>
+          <h1 class="hero__title">Research-Based STEM Learning Rooted in Curiosity</h1>
+          <p class="hero__subtitle">Hands-on science, data literacy, and environmental exploration for students, educators, and curious community members.</p>
+          <p class="hero__body">Through K&ndash;12 education programs, community science initiatives, and lifelong learning experiences, Wildflower Data and Learning brings the practices of real scientific inquiry into schools, neighborhoods, and public spaces.</p>
+          <div class="hero__actions">
+            <a href="#programs" class="btn btn--primary">Explore Programs</a>
+            <a href="https://wildflower-data-and-learning.kit.com/614f249422" class="btn btn--secondary" target="_blank" rel="noopener">Join Our Newsletter</a>
+          </div>
+        </div>
+
+        <div class="hero__art" aria-hidden="true">
+          <!-- Custom field-journal illustration: topographic survey page + observation log -->
+          <svg viewBox="0 0 640 540" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of a field journal showing a topographic survey map and an observation data log">
+            <!-- Page shadows -->
+            <rect x="18" y="34" width="300" height="470" rx="6" fill="#2B3A2C" opacity="0.06" transform="rotate(-2 168 270)"/>
+            <rect x="322" y="22" width="300" height="470" rx="6" fill="#2B3A2C" opacity="0.06" transform="rotate(2 472 258)"/>
+
+            <!-- LEFT PAGE: Topographic survey -->
+            <g transform="rotate(-2 168 270)">
+              <rect x="20" y="30" width="296" height="470" rx="6" fill="#F9F9F6" stroke="#2B3A2C" stroke-width="1.5"/>
+              <!-- Contour lines -->
+              <path d="M40 120 C 90 80, 180 80, 230 130 C 270 170, 260 230, 210 250 C 160 270, 100 250, 80 200 C 65 165, 80 140, 110 145" fill="none" stroke="#2B3A2C" stroke-width="1" opacity="0.35"/>
+              <path d="M55 140 C 100 110, 175 112, 215 150 C 245 180, 235 225, 195 240 C 155 255, 115 240, 100 205 C 90 180, 100 165, 122 168" fill="none" stroke="#2B3A2C" stroke-width="1" opacity="0.25"/>
+              <path d="M70 160 C 105 140, 165 142, 195 168 C 218 190, 210 220, 180 230 C 152 240, 125 228, 116 205" fill="none" stroke="#2B3A2C" stroke-width="1" opacity="0.18"/>
+
+              <!-- Survey grid ticks -->
+              <g stroke="#2B3A2C" stroke-width="1" opacity="0.2">
+                <line x1="20" y1="80" x2="316" y2="80"/>
+                <line x1="20" y1="180" x2="316" y2="180"/>
+                <line x1="20" y1="280" x2="316" y2="280"/>
+                <line x1="20" y1="380" x2="316" y2="380"/>
+                <line x1="20" y1="480" x2="316" y2="480"/>
+              </g>
+
+              <!-- Dashed survey path connecting stations -->
+              <path d="M90 350 L 160 300 L 230 360 L 270 430" fill="none" stroke="#C6923E" stroke-width="1.5" stroke-dasharray="6 5"/>
+
+              <!-- Monitoring stations -->
+              <g stroke="#C6923E" stroke-width="1.5" fill="#F9F9F6">
+                <circle cx="90" cy="350" r="6"/>
+                <circle cx="160" cy="300" r="6"/>
+                <circle cx="230" cy="360" r="6"/>
+                <circle cx="270" cy="430" r="6"/>
+              </g>
+              <g stroke="#C6923E" stroke-width="1">
+                <line x1="84" y1="350" x2="96" y2="350"/><line x1="90" y1="344" x2="90" y2="356"/>
+                <line x1="154" y1="300" x2="166" y2="300"/><line x1="160" y1="294" x2="160" y2="306"/>
+                <line x1="224" y1="360" x2="236" y2="360"/><line x1="230" y1="354" x2="230" y2="366"/>
+                <line x1="264" y1="430" x2="276" y2="430"/><line x1="270" y1="424" x2="270" y2="436"/>
+              </g>
+
+              <!-- Compass / coordinate annotation -->
+              <text x="40" y="65" font-family="JetBrains Mono, monospace" font-size="11" fill="#2B3A2C" opacity="0.55">SITE GRID &mdash; SECTOR 4</text>
+              <text x="40" y="465" font-family="JetBrains Mono, monospace" font-size="11" fill="#2B3A2C" opacity="0.55">42.3&deg;N, 71.1&deg;W</text>
+
+              <!-- North arrow -->
+              <g transform="translate(272 70)">
+                <circle cx="0" cy="0" r="18" fill="none" stroke="#2B3A2C" stroke-width="1" opacity="0.4"/>
+                <path d="M0 -12 L5 4 L0 0 L-5 4 Z" fill="#2B3A2C" opacity="0.6"/>
+                <text x="0" y="-22" font-family="JetBrains Mono, monospace" font-size="10" fill="#2B3A2C" opacity="0.6" text-anchor="middle">N</text>
+              </g>
+            </g>
+
+            <!-- RIGHT PAGE: Observation log -->
+            <g transform="rotate(2 472 258)">
+              <rect x="324" y="18" width="296" height="470" rx="6" fill="#F9F9F6" stroke="#2B3A2C" stroke-width="1.5"/>
+              <!-- Ruled lines -->
+              <g stroke="#2B3A2C" stroke-width="1" opacity="0.12">
+                <line x1="344" y1="180" x2="604" y2="180"/>
+                <line x1="344" y1="205" x2="604" y2="205"/>
+                <line x1="344" y1="230" x2="604" y2="230"/>
+                <line x1="344" y1="255" x2="604" y2="255"/>
+                <line x1="344" y1="395" x2="604" y2="395"/>
+                <line x1="344" y1="420" x2="604" y2="420"/>
+                <line x1="344" y1="445" x2="604" y2="445"/>
+              </g>
+
+              <!-- Header label -->
+              <text x="344" y="50" font-family="JetBrains Mono, monospace" font-size="12" letter-spacing="2" fill="#2B3A2C" opacity="0.7">OBSERVATION LOG</text>
+              <line x1="344" y1="60" x2="604" y2="60" stroke="#2B3A2C" stroke-width="1.5" opacity="0.4"/>
+
+              <!-- Data chart -->
+              <g>
+                <polyline points="344,150 384,120 424,135 464,95 504,110 544,80 584,100" fill="none" stroke="#C6923E" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+                <g fill="#2B3A2C">
+                  <circle cx="344" cy="150" r="3.5"/>
+                  <circle cx="384" cy="120" r="3.5"/>
+                  <circle cx="424" cy="135" r="3.5"/>
+                  <circle cx="464" cy="95" r="3.5"/>
+                  <circle cx="504" cy="110" r="3.5"/>
+                  <circle cx="544" cy="80" r="3.5"/>
+                  <circle cx="584" cy="100" r="3.5"/>
+                </g>
+                <text x="344" y="170" font-family="JetBrains Mono, monospace" font-size="10" fill="#2B3A2C" opacity="0.5">DISSOLVED O&#8322; (mg/L), WEEK 1&ndash;7</text>
+              </g>
+
+              <!-- Hand-drawn style notes -->
+              <g font-family="JetBrains Mono, monospace" font-size="11" fill="#2B3A2C" opacity="0.6">
+                <text x="350" y="198">07/02 &mdash; clear, 21&deg;C, pH 6.8</text>
+                <text x="350" y="223">07/09 &mdash; light rain, turbidity up</text>
+                <text x="350" y="248">07/16 &mdash; macroinvertebrate count: 14</text>
+              </g>
+
+              <!-- Sketch icon: leaf specimen -->
+              <g transform="translate(560 300)" stroke="#2B3A2C" stroke-width="1.5" fill="none" opacity="0.55">
+                <path d="M0 0 C 22 -10, 40 8, 36 32 C 32 54, 8 56, 0 36 C -8 16, -10 4, 0 0 Z"/>
+                <path d="M0 0 C 8 14, 14 28, 18 44"/>
+              </g>
+
+              <!-- Magnifier highlighting a region -->
+              <g transform="translate(400 330)">
+                <circle cx="0" cy="0" r="36" fill="none" stroke="#2B3A2C" stroke-width="1.5" opacity="0.55"/>
+                <line x1="25" y1="25" x2="50" y2="50" stroke="#2B3A2C" stroke-width="3" stroke-linecap="round" opacity="0.55"/>
+                <path d="M-18 0 C -18 -8 -8 -16 0 -16 M 0 16 C -8 16 -18 8 -18 0" stroke="#C6923E" stroke-width="1.5" fill="none"/>
+              </g>
+
+              <!-- Footer annotation -->
+              <text x="344" y="470" font-family="JetBrains Mono, monospace" font-size="11" fill="#2B3A2C" opacity="0.5">RECORDED BY: FIELD TEAM 04</text>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- CREDIBILITY STRIP             -->
+    <!-- ============================= -->
+    <section class="credibility" aria-label="Organization credentials">
+      <div class="container credibility__grid">
+        <div class="credibility__item">
+          <svg class="credibility__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3L2 8l10 5 8-4.2V15h2V8L12 3z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M6 12.5V17c0 1.5 3 3 6 3s6-1.5 6-3v-4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>PhD-Led</span>
+        </div>
+        <div class="credibility__item">
+          <svg class="credibility__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/><line x1="15.2" y1="15.2" x2="21" y2="21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M8 10.5h5M10.5 8v5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+          <span>Research-Informed</span>
+        </div>
+        <div class="credibility__item">
+          <svg class="credibility__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 20V10M10 20V4M16 20v-7M22 20V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          <span>Data Literacy Focused</span>
+        </div>
+        <div class="credibility__item">
+          <svg class="credibility__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 22c5-4 8-8.5 8-12.5A8 8 0 0 0 4 9.5C4 13.5 7 18 12 22z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M12 13c2.5-1 4-3 4-5-2.5 0-4.5 1.5-5.5 3.5C9.5 13.5 10.5 14 12 13z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
+          <span>Environmental Stewardship</span>
+        </div>
+        <div class="credibility__item">
+          <svg class="credibility__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="8" cy="9" r="3" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="17" cy="10" r="2.4" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M2 20c0-3 2.5-5 6-5s6 2 6 5M14.5 15.5c2.8 0 5 1.7 5 4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          <span>Community Engaged</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- ABOUT                         -->
+    <!-- ============================= -->
+    <section class="section" id="about">
+      <div class="container about__grid">
+        <div class="about__text">
+          <p class="field-tag">About the Organization</p>
+          <h2>Science Education Inspired by Real Research</h2>
+          <p>Wildflower Data and Learning was founded to bring the tools and habits of scientific inquiry beyond the walls of universities and research institutions.</p>
+          <p>Our programs help learners of all ages move beyond memorizing facts and toward actively investigating questions, collecting evidence, analyzing patterns, and communicating discoveries.</p>
+          <p>Whether working with elementary students, educators, families, or adult learners, we believe meaningful STEM education happens when people engage directly with the world around them.</p>
+          <p>By combining hands-on exploration, data literacy, environmental observation, and creative problem solving, Wildflower helps learners develop scientific skills alongside a deeper understanding of their communities and ecosystems.</p>
+        </div>
+        <div class="about__figure" aria-hidden="true">
+          <svg viewBox="0 0 320 360" xmlns="http://www.w3.org/2000/svg">
+            <rect x="10" y="10" width="300" height="340" rx="6" fill="none" stroke="#2B3A2C" stroke-width="1.5" opacity="0.5"/>
+            <!-- Observe -->
+            <circle cx="80" cy="80" r="34" fill="none" stroke="#2B3A2C" stroke-width="1.5"/>
+            <line x1="103" y1="103" x2="122" y2="122" stroke="#2B3A2C" stroke-width="3" stroke-linecap="round"/>
+            <!-- Data points / patterns -->
+            <g stroke="#C6923E" stroke-width="2">
+              <circle cx="200" cy="70" r="4" fill="#C6923E"/>
+              <circle cx="230" cy="50" r="4" fill="#C6923E"/>
+              <circle cx="260" cy="90" r="4" fill="#C6923E"/>
+              <path d="M200 70 L230 50 L260 90" fill="none"/>
+            </g>
+            <!-- Leaf / ecosystem -->
+            <path d="M70 220 C 110 190, 170 200, 190 240 C 200 270, 170 300, 130 290 C 95 280, 70 255, 70 220 Z" fill="none" stroke="#2B3A2C" stroke-width="1.5"/>
+            <path d="M70 220 C 110 240, 150 260, 190 240" fill="none" stroke="#2B3A2C" stroke-width="1"/>
+            <!-- Notebook lines -->
+            <g stroke="#2B3A2C" stroke-width="1" opacity="0.18">
+              <line x1="40" y1="320" x2="280" y2="320"/>
+              <line x1="40" y1="300" x2="280" y2="300"/>
+            </g>
+            <text x="40" y="335" font-family="JetBrains Mono, monospace" font-size="11" fill="#2B3A2C" opacity="0.5">FIELD JOURNAL &mdash; VOL. I</text>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- FOUNDER                       -->
+    <!-- ============================= -->
+    <section class="section section--alt" id="founder">
+      <div class="container founder__grid">
+        <div class="founder__portrait" aria-hidden="true">
+          <svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder portrait of Dr. Reshma Nargund">
+            <rect x="2" y="2" width="236" height="236" rx="8" fill="#2B3A2C"/>
+            <circle cx="120" cy="95" r="42" fill="#F9F9F6" opacity="0.9"/>
+            <path d="M50 220 C 50 165, 80 140, 120 140 C 160 140, 190 165, 190 220 Z" fill="#F9F9F6" opacity="0.9"/>
+            <text x="120" y="232" font-family="JetBrains Mono, monospace" font-size="10" fill="#F9F9F6" text-anchor="middle" letter-spacing="1">PHOTO PLACEHOLDER</text>
+          </svg>
+        </div>
+        <div class="founder__text">
+          <p class="field-tag">Meet the Founder</p>
+          <h2>Dr. Reshma Nargund</h2>
+          <p>Dr. Reshma Nargund is an environmental health scientist, educator, and founder of Wildflower Data and Learning.</p>
+          <p>She earned her PhD in Environmental Epigenetics and Molecular Genetics from Duke University, where her research examined how environmental exposures influence human health across early development.</p>
+          <p>Her work integrated environmental science, epidemiology, computational biology, and large-scale data analysis.</p>
+          <p>Throughout her career, she has worked across research, policy, education, and community engagement. She has taught learners ranging from elementary school students to university students and believes scientific inquiry is not reserved for professional scientists; it is a way of thinking that can enrich decision-making, creativity, and civic engagement throughout life.</p>
+          <p>Wildflower Data and Learning grew from a simple idea: everyone should have opportunities to investigate real questions, work with evidence, and experience the excitement of discovery.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- PROGRAMS (TABS)               -->
+    <!-- ============================= -->
+    <section class="section" id="programs">
+      <div class="container">
+        <p class="field-tag">Programs</p>
+        <h2>Learning Experiences for Every Age</h2>
+        <p class="section-intro">Scientific inquiry and environmental learning can enrich lives at every age &mdash; from elementary classrooms to community centers. Explore programs designed for schools and for the broader community below.</p>
+
+        <div class="tabs">
+          <div class="tabs__list" role="tablist" aria-label="Program categories">
+            <button class="tabs__btn is-active" id="tab-k12" role="tab" aria-selected="true" aria-controls="panel-k12" type="button">K&ndash;12 Education</button>
+            <button class="tabs__btn" id="tab-community" role="tab" aria-selected="false" aria-controls="panel-community" tabindex="-1" type="button">Community Science</button>
+          </div>
+
+          <div class="tabs__panel" id="panel-k12" role="tabpanel" aria-labelledby="tab-k12" tabindex="0">
+            <div class="card-grid">
+              <article class="card">
+                <h3>Community Workshops</h3>
+                <p>Hands-on STEM experiences that encourage observation, experimentation, creativity, and problem solving.</p>
+              </article>
+              <article class="card">
+                <h3>Summer Camps</h3>
+                <p>Project-based learning experiences where students investigate real-world environmental and community challenges.</p>
+              </article>
+              <article class="card">
+                <h3>School Partnerships</h3>
+                <p>Custom STEM programming designed to complement classroom learning and support educational goals.</p>
+              </article>
+              <article class="card">
+                <h3>Curriculum Resources</h3>
+                <p>Inquiry-based educational materials that support environmental learning and data literacy.</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="tabs__panel" id="panel-community" role="tabpanel" aria-labelledby="tab-community" tabindex="0" hidden>
+            <p class="section-intro section-intro--tight">Scientific inquiry and environmental learning don't end at graduation. These programs invite community members of all ages to ask questions, gather evidence, and take part in real research.</p>
+            <div class="card-grid">
+              <article class="card">
+                <h3>Science Caf&eacute;s</h3>
+                <p>Informal opportunities for adults and community members to explore scientific topics and engage in discussion.</p>
+              </article>
+              <article class="card">
+                <h3>Community Science Projects</h3>
+                <p>Projects that invite participants to contribute to environmental observation and data collection.</p>
+              </article>
+              <article class="card">
+                <h3>Adult Workshops</h3>
+                <p>Hands-on learning experiences focused on science, data, nature, and environmental issues.</p>
+              </article>
+              <article class="card">
+                <h3>Library &amp; Community Partnerships</h3>
+                <p>Collaborative programs with libraries, museums, community centers, and local organizations.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- LEARNING THEMES               -->
+    <!-- ============================= -->
+    <section class="section section--alt" id="learning-themes">
+      <div class="container">
+        <p class="field-tag">Learning Themes</p>
+        <h2>What We Explore</h2>
+        <div class="theme-grid">
+
+          <article class="theme-card">
+            <svg class="theme-card__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 21h18M5 21V9l5-4 5 4v12M14 21v-7h3v7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M8 12h3M8 16h3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+            <h3>Smart Cities &amp; Sustainability</h3>
+            <p>Investigating how data and design shape the places we live, from transit to energy use.</p>
+          </article>
+
+          <article class="theme-card">
+            <svg class="theme-card__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M5 12a7 7 0 0 1 14 0M2 12a10 10 0 0 1 20 0" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            <h3>Environmental Monitoring</h3>
+            <p>Using sensors and field instruments to track changes in air, water, soil, and habitats.</p>
+          </article>
+
+          <article class="theme-card">
+            <svg class="theme-card__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 19h16M7 19V9M12 19V5M17 19v-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            <h3>Data Science for Young Investigators</h3>
+            <p>Collecting, organizing, and interpreting real data to answer questions that matter.</p>
+          </article>
+
+          <article class="theme-card">
+            <svg class="theme-card__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2C9 6 6 9.5 6 13a6 6 0 0 0 12 0c0-3.5-3-7-6-11z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+            <h3>Water, Air &amp; Ecosystems</h3>
+            <p>Exploring the systems that sustain life and how they connect across a landscape.</p>
+          </article>
+
+          <article class="theme-card">
+            <svg class="theme-card__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            <h3>Engineering Design Challenges</h3>
+            <p>Designing, building, and testing solutions through iterative, evidence-based prototyping.</p>
+          </article>
+
+          <article class="theme-card">
+            <svg class="theme-card__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 22c5-4 8-8.5 8-12.5A8 8 0 0 0 4 9.5C4 13.5 7 18 12 22z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M9 12l3 3 5-6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <h3>Climate &amp; Community Resilience</h3>
+            <p>Examining how communities prepare for and adapt to a changing environment.</p>
+          </article>
+
+          <article class="theme-card">
+            <svg class="theme-card__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="9" cy="9" r="1.4" fill="currentColor"/><circle cx="15" cy="8" r="1" fill="currentColor"/><circle cx="16" cy="14" r="1.6" fill="currentColor"/><path d="M12 3a9 9 0 0 0 0 18c1.5 0 1.5-2 0-2s-1.5-2 0-3 3 0 3-2-2-1.5-3-2" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>
+            <h3>Art + Science</h3>
+            <p>Using observation and creativity together to document and communicate discoveries.</p>
+          </article>
+
+          <article class="theme-card">
+            <svg class="theme-card__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="5" y="3" width="14" height="18" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M9 3v2h6V3M8 9h8M8 13h8M8 17h5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+            <h3>Citizen Science</h3>
+            <p>Contributing real observations to ongoing research projects and shared datasets.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- IMPACT FRAMEWORK              -->
+    <!-- ============================= -->
+    <section class="section" id="impact">
+      <div class="container">
+        <p class="field-tag">Our Approach</p>
+        <h2>From Observation to Stewardship</h2>
+        <p class="section-intro">Wildflower's programs help learners move from curiosity to informed action by teaching the practices of scientific inquiry. Participants learn how to ask meaningful questions, collect evidence, identify patterns, communicate findings, and become thoughtful stewards of their communities and environments.</p>
+
+        <ol class="process">
+          <li class="process__step">
+            <svg class="process__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/><line x1="15.2" y1="15.2" x2="21" y2="21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            <h3>Observe</h3>
+          </li>
+          <li class="process__arrow" aria-hidden="true">&rarr;</li>
+          <li class="process__step">
+            <svg class="process__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 21h16M6 21V11M12 21V5M18 21v-8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            <h3>Measure</h3>
+          </li>
+          <li class="process__arrow" aria-hidden="true">&rarr;</li>
+          <li class="process__step">
+            <svg class="process__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 18l5-6 4 3 7-9" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <h3>Analyze</h3>
+          </li>
+          <li class="process__arrow" aria-hidden="true">&rarr;</li>
+          <li class="process__step">
+            <svg class="process__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2C9 6 6 9.5 6 13a6 6 0 0 0 12 0c0-3.5-3-7-6-11z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><circle cx="12" cy="13" r="2" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>
+            <h3>Understand</h3>
+          </li>
+          <li class="process__arrow" aria-hidden="true">&rarr;</li>
+          <li class="process__step">
+            <svg class="process__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 21c5-4 8-8.5 8-12.5A8 8 0 0 0 4 8.5C4 12.5 7 17 12 21z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M9 8.5c3-2 6-1 6 2" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+            <h3>Act</h3>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- CURRICULUM LIBRARY            -->
+    <!-- ============================= -->
+    <section class="section section--alt" id="curriculum">
+      <div class="container">
+        <p class="field-tag">Curriculum Library</p>
+        <h2>Curriculum Library</h2>
+        <p class="section-intro">Wildflower is developing curriculum resources that help educators bring inquiry-based STEM learning into classrooms, camps, libraries, and community programs.</p>
+
+        <!-- Curriculum cards are styled as product placeholders so this section can evolve into a future store -->
+        <div class="card-grid card-grid--curriculum">
+          <article class="product-card">
+            <span class="badge">Coming Soon</span>
+            <div class="product-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V9l5-4 5 4v12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M14 21v-7h3v7" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+            </div>
+            <h3>Smart City Challenge</h3>
+            <p>An engineering and data unit exploring how cities use information to solve everyday problems.</p>
+          </article>
+          <article class="product-card">
+            <span class="badge">Coming Soon</span>
+            <div class="product-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M5 12a7 7 0 0 1 14 0M2 12a10 10 0 0 1 20 0" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Environmental Data Investigations</h3>
+            <p>Guided investigations using real environmental datasets to build data literacy skills.</p>
+          </article>
+          <article class="product-card">
+            <span class="badge">Coming Soon</span>
+            <div class="product-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 9h8M8 13h8M8 17h5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Citizen Science Toolkits</h3>
+            <p>Ready-to-use materials for contributing classroom and community observations to real research.</p>
+          </article>
+          <article class="product-card">
+            <span class="badge">Coming Soon</span>
+            <div class="product-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 21c5-4 8-8.5 8-12.5A8 8 0 0 0 4 8.5C4 12.5 7 17 12 21z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M9 8.5c3-2 6-1 6 2" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Climate &amp; Weather Explorations</h3>
+            <p>Hands-on units exploring weather patterns, climate data, and long-term environmental change.</p>
+          </article>
+          <article class="product-card">
+            <span class="badge">Coming Soon</span>
+            <div class="product-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Engineering Design Projects</h3>
+            <p>Iterative design challenges that build problem-solving skills through prototyping and testing.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- CONSULTING                    -->
+    <!-- ============================= -->
+    <section class="section" id="consulting">
+      <div class="container">
+        <p class="field-tag">Educational Consulting</p>
+        <h2>Educational Consulting</h2>
+        <p class="section-intro">Wildflower partners with schools, libraries, museums, nonprofits, and community organizations seeking thoughtful, research-informed STEM programming.</p>
+
+        <div class="card-grid">
+          <article class="card">
+            <h3>Curriculum Development</h3>
+            <p>Custom, inquiry-based curriculum aligned to your learners and learning goals.</p>
+          </article>
+          <article class="card">
+            <h3>Program Design</h3>
+            <p>Designing workshops, camps, and ongoing programming built around scientific inquiry.</p>
+          </article>
+          <article class="card">
+            <h3>Environmental Education Initiatives</h3>
+            <p>Planning and implementing place-based environmental learning experiences.</p>
+          </article>
+          <article class="card">
+            <h3>Citizen Science Programs</h3>
+            <p>Developing community science projects that connect participants to real research.</p>
+          </article>
+          <article class="card">
+            <h3>Data Literacy Integration</h3>
+            <p>Embedding data collection, analysis, and interpretation across subject areas.</p>
+          </article>
+          <article class="card">
+            <h3>Learning Evaluation &amp; Assessment</h3>
+            <p>Designing evaluation approaches that capture meaningful learning outcomes.</p>
+          </article>
+        </div>
+
+        <div class="consulting__cta">
+          <h3>Have a project in mind?</h3>
+          <p>We'd love to learn about your organization's goals and how Wildflower can help.</p>
+          <a href="mailto:hello@wildflowerdatalearning.org" class="btn btn--primary">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- EVENTS                        -->
+    <!-- ============================= -->
+    <section class="section section--alt" id="events">
+      <div class="container">
+        <p class="field-tag">Events</p>
+        <h2>Upcoming Events</h2>
+        <p class="section-intro">Current workshop registrations are hosted on Eventbrite.</p>
+        <a href="#" class="btn btn--primary" id="eventbriteBtn">View Events</a>
+
+        <!--
+          EVENTBRITE INTEGRATION:
+          Replace the placeholder div below with the Eventbrite widget embed code
+          (e.g. the Eventbrite "Add to your site" iframe / script embed for this organization's event listings).
+          Update the href of #eventbriteBtn above to point to the organization's Eventbrite page.
+        -->
+        <div class="eventbrite-placeholder">
+          <p>Eventbrite event listings will appear here.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- ADVISORY BOARD                -->
+    <!-- ============================= -->
+    <section class="section" id="advisory-board">
+      <div class="container">
+        <p class="field-tag">Advisory Board</p>
+        <h2>Advisory Board</h2>
+        <p class="section-intro">Wildflower is building a network of educators, scientists, and community leaders who share a commitment to inquiry-driven STEM learning and environmental stewardship. Board member profiles coming soon.</p>
+
+        <div class="card-grid card-grid--advisors">
+          <article class="advisor-card">
+            <div class="advisor-card__avatar" aria-hidden="true">
+              <svg viewBox="0 0 80 80"><circle cx="40" cy="40" r="38" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="40" cy="32" r="13" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M16 66c0-13 10.7-22 24-22s24 9 24 22" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+            </div>
+            <h3>Advisor Name</h3>
+            <p class="advisor-card__role">Profile coming soon</p>
+          </article>
+          <article class="advisor-card">
+            <div class="advisor-card__avatar" aria-hidden="true">
+              <svg viewBox="0 0 80 80"><circle cx="40" cy="40" r="38" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="40" cy="32" r="13" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M16 66c0-13 10.7-22 24-22s24 9 24 22" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+            </div>
+            <h3>Advisor Name</h3>
+            <p class="advisor-card__role">Profile coming soon</p>
+          </article>
+          <article class="advisor-card">
+            <div class="advisor-card__avatar" aria-hidden="true">
+              <svg viewBox="0 0 80 80"><circle cx="40" cy="40" r="38" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="40" cy="32" r="13" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M16 66c0-13 10.7-22 24-22s24 9 24 22" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+            </div>
+            <h3>Advisor Name</h3>
+            <p class="advisor-card__role">Profile coming soon</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- NEWSLETTER                    -->
+    <!-- ============================= -->
+    <section class="newsletter" id="newsletter">
+      <div class="container newsletter__inner">
+        <p class="field-tag field-tag--invert">Stay Connected</p>
+        <h2>Stay Connected</h2>
+        <p>Receive updates about workshops, curriculum releases, educational resources, STEM activities, and community science opportunities.</p>
+        <a href="https://wildflower-data-and-learning.kit.com/614f249422" class="btn btn--primary" target="_blank" rel="noopener">Join the Newsletter</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================= -->
+  <!-- FOOTER                        -->
+  <!-- ============================= -->
+  <footer class="site-footer">
+    <div class="container footer__grid">
+      <div class="footer__about">
+        <p class="footer__name">Wildflower Data and Learning</p>
+        <p class="footer__mission">Cultivating scientific literacy, data-informed thinking, and environmental stewardship through research-based learning experiences.</p>
+      </div>
+
+      <div class="footer__links">
+        <h2 class="footer__heading">Explore</h2>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#programs">Programs</a></li>
+          <li><a href="#curriculum">Curriculum</a></li>
+          <li><a href="#consulting">Consulting</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#advisory-board">Advisory Board</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__connect">
+        <h2 class="footer__heading">Connect</h2>
+        <a href="https://wildflower-data-and-learning.kit.com/614f249422" class="footer__newsletter-link" target="_blank" rel="noopener">Join Our Newsletter &rarr;</a>
+
+        <!-- Social media placeholders: add organization profile URLs when available -->
+        <div class="footer__social" aria-label="Social media links">
+          <a href="#" class="footer__social-link" aria-label="Wildflower Data and Learning on Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M15 8.5h2V5.5h-2c-2 0-3.5 1.5-3.5 3.5v2H9v3h2.5V19H14v-6h2.2l.5-3H14V9c0-.3.2-.5.5-.5z" fill="currentColor"/></svg>
+          </a>
+          <a href="#" class="footer__social-link" aria-label="Wildflower Data and Learning on Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <p>&copy; <span id="year"></span> Wildflower Data and Learning. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
