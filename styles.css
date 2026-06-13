@@ -427,9 +427,11 @@ button:focus-visible,
   width: 100%;
 }
 
-.hero__art svg {
+.hero__art img {
   width: 100%;
   height: auto;
+  border-radius: var(--radius);
+  border: 1px solid var(--olive-line);
 }
 
 /* --------------------------------------------------------------------------
@@ -468,17 +470,8 @@ button:focus-visible,
 /* --------------------------------------------------------------------------
    8. ABOUT
    -------------------------------------------------------------------------- */
-.about__grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2.5rem;
-  align-items: center;
-}
-
-@media (min-width: 920px) {
-  .about__grid {
-    grid-template-columns: 1.1fr 0.9fr;
-  }
+.about__text {
+  max-width: 760px;
 }
 
 .about__text p {
@@ -487,11 +480,6 @@ button:focus-visible,
 
 .about__text p:first-of-type {
   color: var(--olive);
-}
-
-.about__figure svg {
-  width: 100%;
-  height: auto;
 }
 
 /* --------------------------------------------------------------------------
@@ -512,8 +500,15 @@ button:focus-visible,
 }
 
 .founder__portrait {
-  max-width: 280px;
+  max-width: 320px;
   margin: 0 auto;
+}
+
+.founder__portrait img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  border: 1px solid var(--olive-line);
 }
 
 @media (min-width: 920px) {
