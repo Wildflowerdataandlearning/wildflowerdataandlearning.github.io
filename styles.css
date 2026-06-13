@@ -787,7 +787,7 @@ button:focus-visible,
 
 .offering-card__media {
   position: relative;
-  height: 220px;
+  height: 260px;
   overflow: hidden;
   border-bottom: 1px solid var(--olive-line);
   background-color: var(--olive-wash);
@@ -796,7 +796,7 @@ button:focus-visible,
 .offering-card__media img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .offering-card__body {
